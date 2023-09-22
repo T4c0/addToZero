@@ -1,0 +1,18 @@
+array1 = [1, 4, 11, 2, 37, -4]; //test arrays
+array2 = [0, 21, 33, 6, 0, -9];
+array3 = [0, 1, 2, 3, 4, 5];
+
+const addToZero = (arr) => {    //function
+  let isZero = false;    //variable 
+  for (let i = 0; i < arr.length; i++) {    //loop through array
+    for (let j = 1; j < arr.length; j++) {  //nested loop that starts at 1 instead of 0 since i=0
+      if (arr[i] + arr[j] === 0) {  //checking sum of array index i and index j
+        isZero = true;   //if true change boolean
+      }
+    }
+  }
+
+  return isZero;    //return variable with boolean
+};
+
+// console.log(addToZero(array3));
